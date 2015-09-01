@@ -107,52 +107,7 @@ code {
 .transparent-overlay:hover {
   opacity: 1;
 }
-.icon-small {
-  width: 32px;
-  height: 32px;
-  background-image: url("../img/social.png");
-  background-size: 160px 60px;
-  display: inline-block;
-  border-bottom: none;
-  transition: all .6s;
-  -moz-transition: all .6s;
-  /* Firefox 4 */
-  -webkit-transition: all .6s;
-  /* Safari 和 Chrome */
-  -o-transition: all .6s;
-  /* Opera */
-  color: transparent;
-}
-.icon-twitter {
-  background-position: 0 0;
-}
-.icon-facebook {
-  background-position: -32px 0;
-}
-.icon-google {
-  background-position: -64px 0;
-}
-.icon-linkedin {
-  background-position: -96px 0;
-}
-.icon-weibo {
-  background-position: -128px 0;
-}
-.icon-digg {
-  background-position: 0 32px;
-}
-.icon-douban {
-  background-position: -32px 30px;
-}
-.icon-reddit {
-  background-position: -64px 32px;
-}
-.icon-stumble {
-  background-position: -96px 32px;
-}
-.icon-github {
-  background-position: -128px 32px;
-}
+
 .info {
   font-size: 1.2rem;
   color: #999;
@@ -183,6 +138,25 @@ html, body {
 .mainbody h2 {
   padding-bottom: 15px;
   border-bottom: 5px solid #eee;
+}
+
+.download-btn {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-left: 15px;
+  -webkit-transition: background-color 0.6s;
+  -moz-transition: background-color 0.6s;
+  -ms-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+.download-btn:hover {
+  background-color: #eee;
 }
 
 ul > li {
