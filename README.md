@@ -1,9 +1,10 @@
 #water-bubble-chart
 A jQuery plugin to make water bubble chart (liquid bubble chart).  
 It can used in you resume to describe the degree of your master skills or react the completion of something you are doing.  
-You can visit [this] for more information and watch a demo. 
+You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more information and watch a demo. 
   
 这是一个水球图表， 可以用来反应你某项技能的掌握情况， 或者你正在做的某件事的完成情况。
+查看[demo](http://fiona23.github.io/water-bubble-chart/)
 
 #Usage
 To use water bubble chart, the following files should always be included.
@@ -37,7 +38,7 @@ $('waterbubble').waterbubble({
     animation: false
 })
 ```
-
+There're 9 parameters to set with water-bubble-chart, none of which is compulsory.  
 * radius: The radius of your waterbubble and you don't need to set height or width on your canvas anymore.
 * lineWidth: The thickness of your water bubble's shell. The value of it will equal radius/25 if you don't set this option.
 * textColor: The color of The text. You'd better set a value of alpha of TextColor, because I think it will be more beautiful :).
