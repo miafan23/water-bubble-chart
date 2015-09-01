@@ -6,6 +6,8 @@ You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more info
 这是一个水球图表， 可以用来反应你某项技能的掌握情况， 或者你正在做的某件事的完成情况。
 查看[demo](http://fiona23.github.io/water-bubble-chart/)
 
+![waterbubble](js.png)
+
 #Usage
 To use water bubble chart, the following files should always be included.
 
@@ -21,12 +23,12 @@ To use water bubble chart, the following files should always be included.
 ###js code  
 You can use the default settings like this: 
 ```javascript
-$('waterbubble').waterbubble();
+$('#waterbubble').waterbubble();
 ```
 
 Or you can set following options by yourself
 ```javascript
-$('waterbubble').waterbubble({
+$('#waterbubble').waterbubble({
 	radius: 100,
     lineWidth: 5,
     data: 0.5,
