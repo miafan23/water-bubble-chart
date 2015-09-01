@@ -8,17 +8,24 @@ You can visit [this] for more information and watch a demo.
 #Usage
 To use water bubble chart, the following files should always be included.
 
-`<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="waterbubble.js" type="text/javascript"></script>`
+```html
+<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="waterbubble.js" type="text/javascript"></script>
+```
 
 ###html code
-`<canvas id="waterbubble"></canvas>`
+```html
+<canvas id="waterbubble"></canvas>
+```
 ###js code  
 You can use the default settings like this: 
-`$('waterbubble').waterbubble();`
+```javascript
+$('waterbubble').waterbubble();
+```
 
 Or you can set following options by yourself
-`$('waterbubble').waterbubble({
+```javascript
+$('waterbubble').waterbubble({
 	radius: 100,
     lineWidth: 5,
     data: 0.5,
@@ -28,7 +35,8 @@ Or you can set following options by yourself
     font: 'bold 50px "Microsoft YaHei"',
     wave: true,
     animation: false
-})`
+})
+```
 
 * radius: The radius of your waterbubble and you don't need to set height or width on your canvas anymore.
 * lineWidth: The thickness of your water bubble's shell. The value of it will equal radius/25 if you don't set this option.
