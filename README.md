@@ -31,8 +31,8 @@ $('waterbubble').waterbubble({
     data: 0.5,
     waterColor: 'rgba(25, 139, 201, 1)',
     textColor: 'rgba(06, 85, 128, 0.8)',
-    txt: 'JavaScript'
-    font: 'bold 50px "Microsoft YaHei"',
+    txt: 'JavaScript',
+    font: 'bold 30px "Microsoft YaHei"',
     wave: true,
     animation: false
 })

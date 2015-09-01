@@ -127,7 +127,7 @@
             _drawText: function (ctx, textColor, font, radius, data, x, y, txt) {
                 ctx.globalCompositeOperation = 'source-over';
 
-                var size = font ? font.replace( /^\D+/g, '') : 0.4*radius;
+                var size = font ? font.replace( /\D+/g, '') : 0.4*radius;
                 ctx.font = font ? font : 'bold ' + size + 'px Microsoft Yahei';
 
                 txt = txt.length ? txt : data*100 + '%'
