@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>water bubble chart</title>
         <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" data-id="main" src="waterbubble.js"></script>
+        <script type="text/javascript" data-id="main" src="waterbubble.min.js"></script>
+        <link rel="stylesheet" href="default.css" type="text/css">
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
     <header class="header">
         <h1>Water Bubble Chart</h1>
     </header>
-    <section>
-        <h2>Download</h2>
-    </section>
-    <section>
-        <h2>Documention</h2>
-        <canvas id="waterbubble"></canvas>
-    </section>
-    <section>
-        <h2>About Author</h2>
-    </section>
-        
-    
+    <div class="mainbody">
+        <section>
+            <h2>Download</h2>
+            <article>
+                <a href="">Download waterbubble.js</a>
+                <a href="">Download waterbubble.min.js</a>
+            </article>
+        </section>
+        <section>
+            <h2>Documention</h2>
 
+            <article>
+                <p>You can use the default settings like this: </p>
+                <div class="highlight">$('waterbubble').waterbubble();</div>
+                <p>And you will get the following chart</p>
+                <canvas id="default"></canvas>
+
+                <p>Or you can set following options by yourself.</p>
+                <pre class="highlight">
+$('#waterbubble').waterbubble({
+    radius: 100,
+    lineWidth: 5,
+    data: 0.5,
+    waterColor: 'rgba(25, 139, 201, 1)',
+    textColor: 'rgba(06, 85, 128, 0.8)',
+    txt: 'JavaScript',
+    font: 'bold 30px "Microsoft Yahei"',
+    wave: true,
+    animation: false,
+})
+                </pre>
+                <canvas id="setting"></canvas>
+                <p>There're 9 parameters to set with water-bubble-chart, none of which is compulsory.</p>
+                <ul>
+                    <li><strong>radius:</strong> The radius of your waterbubble and you don't need to set height or width on your canvas anymore.</li>
+                    <li><strong>lineWidth:</strong> The thickness of your water bubble's shell. The value of it will equal radius/25 if you don't set this option.</li>
+                    <li><strong>textColor:</strong> The color of The text. You'd better set a value of alpha of TextColor, because I think it will be more beautiful :).</li>
+                    <li><strong>txt:</strong> The text you want to show in this chart. There will be no text if you don't set it. If you set it as `txt: ''` then the chart will show the percentage of the data.</li>
+                    <li><strong>font:</strong> The style of text. Default size is 40% of radius.</li>
+                    <li><strong>wave:</strong> There will be a waveform on the water if it values true otherwise it will be plane. The default value is true.</li>
+                    <li><strong>animation:</strong> Default value is true.</li>
+                </ul>
+            </article>
+            
+        </section>
+        <section>
+            <h2>About Author</h2>
+            <article>
+                <p>
+                    My github: <a class="inline-link" href="https://github.com/fiona23">https://github.com/fiona23</a>
+                </p>
+                <p>My personal site: <a class="inline-link" href="http://fiona23.github.io">枳的博客</a></p>
+                <p>If you have any question, please don't be heisitate to contact with me by <a class="inline-link" href="https://github.com/fiona23/water-bubble-chart/issues">github issue</a> or sent an <a href="mailto:fiona_fanmy@163.com" class="inline-link">email</a> to fiona_fanmy at 163.com</p>
+            </article>
+        </section>
+        <footer>
+            <p>water bubble chart</p>
+        </footer>
+    </div>
     <script type="text/javascript">
-    	$('#waterbubble').waterbubble({
-    		wave: false,
-    		txt: '',
-    	});
-
+    	$('#default').waterbubble();
+        $('#setting').waterbubble({
+                    radius: 100,
+                    lineWidth: 5,
+                    data: 0.5,
+                    waterColor: 'rgba(25, 139, 201, 1)',
+                    textColor: 'rgba(06, 85, 128, 0.8)',
+                    txt: 'JavaScript',
+                    font: 'bold 30px "Microsoft Yahei"',
+                    wave: true,
+                    animation: false,
+                })
     </script>
     </body>
 </html>

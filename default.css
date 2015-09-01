@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Microsoft Jhenghei', 'Microsoft Yahei';
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+::-moz-selection {
+  background-color: #428445;
+  color: #fff;
+}
+::selection {
+  background-color: #428445;
+  color: #fff;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.6s;
+  -moz-transition: color 0.6s;
+  -ms-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  transition: color 0.6s;
+}
+a:link,
+a:visited {
+  color: #464646;
+}
+a:hover {
+  color: #428445;
+}
+a.inline-link:link, a.inline-link:visited {
+  color: #428445;
+  font-weight: bold;
+}
+a.inline-link:hover {
+  color: #464646;
+  font-weight: bold;
+}
+p {
+  line-height: 170%;
+  margin: 1em 0;
+}
+code {
+  background-color: #f7f7f7;
+  padding: 2px 5px 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 85%;
+}
+.highlight {
+  background-color: #f7f7f7;
+  padding: 16px 16px;
+}
+.highlight > pre {
+  padding: 0;
+  margin: 0;
+}
+.highlight code {
+  border: none;
+  padding: 0;
+}
+.highlight .c {
+  color: #999988;
+}
+.highlight .kd {
+  color: #428445;
+  font-weight: bold;
+}
+.highlight .k {
+  color: #428445;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #428445;
+}
+.highlight .s {
+  color: #ED4A56;
+}
+.highlight .c1 {
+  color: #428445;
+}
+.highlight .nb {
+  color: #253987;
+  font-weight: bold;
+}
+.transparent-overlay {
+  opacity: 0.6;
+  transition: all .4s;
+  -moz-transition: all .4s;
+  /* Firefox 4 */
+  -webkit-transition: all .4s;
+  /* Safari 和 Chrome */
+  -o-transition: all .4s;
+  /* Opera */
+}
+.transparent-overlay:hover {
+  opacity: 1;
+}
+.icon-small {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/social.png");
+  background-size: 160px 60px;
+  display: inline-block;
+  border-bottom: none;
+  transition: all .6s;
+  -moz-transition: all .6s;
+  /* Firefox 4 */
+  -webkit-transition: all .6s;
+  /* Safari 和 Chrome */
+  -o-transition: all .6s;
+  /* Opera */
+  color: transparent;
+}
+.icon-twitter {
+  background-position: 0 0;
+}
+.icon-facebook {
+  background-position: -32px 0;
+}
+.icon-google {
+  background-position: -64px 0;
+}
+.icon-linkedin {
+  background-position: -96px 0;
+}
+.icon-weibo {
+  background-position: -128px 0;
+}
+.icon-digg {
+  background-position: 0 32px;
+}
+.icon-douban {
+  background-position: -32px 30px;
+}
+.icon-reddit {
+  background-position: -64px 32px;
+}
+.icon-stumble {
+  background-position: -96px 32px;
+}
+.icon-github {
+  background-position: -128px 32px;
+}
+.info {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background: url(header-bg.png);
+    height: 400px;
+}
+
+    .header h1 {
+        text-align: center;
+        margin: 0;
+        padding-top: 150px;
+    }
+
+.mainbody {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.mainbody h2 {
+  padding-bottom: 15px;
+  border-bottom: 5px solid #eee;
+}
+
+ul > li {
+  line-height: 170%;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+footer {
+  text-align: center;
+  padding: 100px 0 10px 0;
+}
