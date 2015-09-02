@@ -1,7 +1,7 @@
 #water-bubble-chart
-A jQuery plugin to make water bubble chart (liquid bubble chart).  
-It can used in you resume to describe the degree of your master skills or react the completion of something you are doing.  
-You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more information and watch a demo. 
+This is a jQuery plugin to render specific data into water bubble chart (or liquid bubble chart).  
+For instance, it can used in you resume to describe the extent to which you master some skills, or to reflect as a progress bar for completing a specific task.
+You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more information, with a demo included as well. 
   
 这是一个水球图表， 可以用来反应你某项技能的掌握情况， 或者你正在做的某件事的完成情况。
 查看[demo](http://fiona23.github.io/water-bubble-chart/)
@@ -9,7 +9,7 @@ You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more info
 ![waterbubble](js.png)
 
 #Usage
-To use water bubble chart, the following files should always be included.
+To implement the water bubble charts, the following files should always be included.
 
 ```html
 <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -40,11 +40,11 @@ $('#waterbubble').waterbubble({
     animation: false
 })
 ```
-There're 9 parameters to set with water-bubble-chart, none of which is compulsory.  
-* radius: The radius of your waterbubble and you don't need to set height or width on your canvas anymore.
-* lineWidth: The thickness of your water bubble's shell. The value of it will equal radius/25 if you don't set this option.
-* textColor: The color of The text. You'd better set a value of alpha of TextColor, because I think it will be more beautiful :).
-* txt: The text you want to show in this chart. There will be no text if you don't set it. If you set it as `txt: ''` then the chart will show the percentage of the data.
+There are 9 optional parameters to be set with water-bubble-chart, none of which is mandatory.  
+* radius: The radius of your waterbubble. Once set, there is no need to further set height or width on your canvas.
+* lineWidth: The thickness of your water bubble's shell. The value of it equals to radius/25, unless you specify it to other values.
+* textColor: The color of the text. You'd better set the value of alpha of textColor, because I think it should be more beautiful :).
+* txt: The text content you'd like to display in the chart. There will be no text if you don't set it. If set as `txt: ''` then the chart will show the percentage data.
 * font: The style of text. Default size is 40% of radius.
-* wave: There will be a waveform on the water if it values true otherwise it will be plane. The default value is true.
+* wave: This indicates whether a wave shape should be shown in the chart, if set to be false, a plane is shown instead of the wave. The default value is true.
 * animation: Default value is true.
