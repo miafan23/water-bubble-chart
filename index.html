@@ -33,9 +33,17 @@
         <section>
             <h2>Documention</h2>
 
+            <p>To implement the water bubble charts, the following files should always be included.</p>
+            <pre class="highlight">
+&ltscript src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"&gt&lt/script&gt
+&ltscript src="waterbubble.js" type="text/javascript"&gt&lt/script&gt</pre>
+
             <article>
-                <p>You can use the default settings like this: </p>
-                <div class="highlight">$('waterbubble').waterbubble();</div>
+                <p>hmtl code</p>
+                <pre class="highlight">
+&ltcanvas id="waterbubble"&gt&lt/canvas&gt</pre>
+                <p>In JavaScript file, you can use the default settings like this: </p>
+                <div class="highlight">$('#waterbubble').waterbubble();</div>
                 <p>And you will get the following chart</p>
                 <canvas id="default"></canvas>
 
@@ -51,17 +59,17 @@ $('#waterbubble').waterbubble({
     font: 'bold 30px "Microsoft Yahei"',
     wave: true,
     animation: false,
-})
+})  
                 </pre>
                 <canvas id="setting"></canvas>
-                <p>There're 9 parameters to set with water-bubble-chart, none of which is compulsory.</p>
+                <p>There are 9 optional parameters to be set with water-bubble-chart, none of which is mandatory.</p>
                 <ul>
-                    <li><strong>radius:</strong> The radius of your waterbubble and you don't need to set height or width on your canvas anymore.</li>
-                    <li><strong>lineWidth:</strong> The thickness of your water bubble's shell. The value of it will equal radius/25 if you don't set this option.</li>
-                    <li><strong>textColor:</strong> The color of The text. You'd better set a value of alpha of TextColor, because I think it will be more beautiful :).</li>
-                    <li><strong>txt:</strong> The text you want to show in this chart. There will be no text if you don't set it. If you set it as `txt: ''` then the chart will show the percentage of the data.</li>
+                    <li><strong>radius:</strong> The radius of your waterbubble. Once set, there is no need to further set height or width on your canvas.</li>
+                    <li><strong>lineWidth:</strong> The thickness of your water bubble's shell. The value of it equals to radius/25, unless you specify it to other values.</li>
+                    <li><strong>textColor:</strong> The color of the text. You'd better set the value of alpha of textColor, because I think it should be more beautiful : ).</li>
+                    <li><strong>txt:</strong> The text content you'd like to display in the chart. There will be no text if you don't set it. If set as <code>txt: ''</code> then the chart will show the percentage data.</li>
                     <li><strong>font:</strong> The style of text. Default size is 40% of radius.</li>
-                    <li><strong>wave:</strong> There will be a waveform on the water if it values true otherwise it will be plane. The default value is true.</li>
+                    <li><strong>wave:</strong> This indicates whether a wave shape should be shown in the chart, if set to be false, a plane is shown instead of the wave. The default value is true.</li>
                     <li><strong>animation:</strong> Default value is true.</li>
                 </ul>
             </article>
