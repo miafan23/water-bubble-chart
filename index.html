@@ -47,7 +47,7 @@
                 <div class="highlight">$('#waterbubble').waterbubble();</div>
                 <p>And you will get the following chart</p>
                 <canvas id="default"></canvas>
-
+                <button id="refresh">refresh</button>
                 <p>Or you can set following options by yourself.</p>
                 <pre class="highlight">
 $('#waterbubble').waterbubble({
@@ -63,6 +63,7 @@ $('#waterbubble').waterbubble({
 })  
                 </pre>
                 <canvas id="setting"></canvas>
+                
                 <p>There are 9 optional parameters to be set with water-bubble-chart, none of which is mandatory.</p>
                 <ul>
                     <li><strong>radius:</strong> The radius of your waterbubble. Once set, there is no need to further set height or width on your canvas.</li>
@@ -92,6 +93,9 @@ $('#waterbubble').waterbubble({
     </div>
     <script type="text/javascript">
     	$('#default').waterbubble();
+        $('#refresh').on('click', function () {
+            $('#default').waterbubble();
+        })
         $('#setting').waterbubble({
                     radius: 100,
     lineWidth: 5,
