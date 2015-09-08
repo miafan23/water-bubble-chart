@@ -148,7 +148,7 @@
                 };
                 var self = this;
                 var update = function () {
-                    if (datanow.value < data) {
+                    if (datanow.value < data - 0.01) {
                         datanow.value += (data - datanow.value)/15
                         self._runing = true;
                     } else {

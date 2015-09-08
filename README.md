@@ -1,6 +1,6 @@
 #water-bubble-chart
 A jQuery plugin to make water bubble chart (liquid bubble chart).  
-It can used in you resume to describe the degree of your master skills or react the completion of something you are doing.  
+It can used in your resume to describe the degree of your master skills or react the completion of something you are doing.  
 You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more information and watch a demo. 
   
 这是一个水球图表， 可以用来反应你某项技能的掌握情况， 或者你正在做的某件事的完成情况。
