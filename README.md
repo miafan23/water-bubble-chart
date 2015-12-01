@@ -11,7 +11,7 @@ You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more info
 ![waterbubble](js.png)
 
 #update
-Because the bug of newest version of chrome V 46.0.2490.86, I have to render the text after animation.  
+Because of the [bug](http://stackoverflow.com/questions/34012767/why-there-is-a-white-line-on-the-edge-while-using-canvas-destination-over) of newest version of chrome V 46.0.2490.86, I have to render the text after animation.  
 I have reported this issue to google, hoping it would be sovled in the new version.
 
 #Usage
