@@ -10,6 +10,10 @@ You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more info
 
 ![waterbubble](js.png)
 
+#update
+Because the bug of newest version of chrome V 46.0.2490.86, I have to render the text after animation.  
+I have reported this issue to google, hoping it would be sovled in the new version.
+
 #Usage
 To implement the water bubble charts, the following files should always be included.
 
