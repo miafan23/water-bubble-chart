@@ -6,7 +6,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.6em;
 }
 ::-moz-selection {
   background-color: #428445;
@@ -17,10 +17,10 @@ body {
   color: #fff;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4em;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2em;
 }
 
 a {
@@ -109,7 +109,7 @@ code {
 }
 
 .info {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: #999;
 }
 

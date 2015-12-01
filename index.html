@@ -92,9 +92,17 @@ $('#waterbubble').waterbubble({
         </footer>
     </div>
     <script type="text/javascript">
-    	$('#default').waterbubble();
+    	$('#default').waterbubble({
+            radius: 100,
+            txt: 'JavaScript',
+            font: 'bold 30px "Microsoft Yahei"',
+        });
         $('#refresh').on('click', function () {
-            $('#default').waterbubble();
+            $('#default').waterbubble({
+                radius: 100,
+            txt: 'JavaScript',
+            font: 'bold 30px "Microsoft Yahei"',
+            });
         })
         $('#setting').waterbubble({
                     radius: 100,
