@@ -1,6 +1,8 @@
 /**
  * 水球图 wataerbubble
  * @author fiona23 (fiona_fanmy@163.com)
+ * @2016.3.8 version 1.2
+ *  chrome bug fixed
  * @version 1.1
  * Because the bug of chrome V 46.0.2490.86, I have to render the text after animation, so guilty.
  * I have reported this issue to google, hoping it would be sovled in the new version.
@@ -75,20 +77,15 @@
                 ctx.lineWidth = lineWidth;
                 ctx.strokeStyle = waterColor;
                 ctx.stroke();
+                if (typeof config.txt == 'string'){
+                    this._drawText(ctx, textColor, font, config.radius, data, x, y, config.txt);
+                }
                 //if config animation true
                 if (config.animation) {
                     this._animate(ctx, r, data, lineWidth, waterColor, x, y, wave, config.txt, textColor, font)
                 } else {
                     this._fillWater(ctx, r, data, lineWidth, waterColor, x, y, wave);
-
-                    if (typeof config.txt == 'string'){
-                        this._drawText(ctx, textColor, font, config.radius, data, x, y, config.txt);
-                    }
                 }
-                
-                // if (typeof config.txt == 'string'){
-                //     this._drawText(ctx, textColor, font, config.radius, data, x, y, config.txt);
-                // }
 
                 return;
             },
@@ -97,7 +94,7 @@
                 // this.refresh(canvas, config);
                 ctx.beginPath();
 
-                // ctx.globalCompositeOperation = 'destination-over';
+                ctx.globalCompositeOperation = 'destination-over';
 
                 //start co-ordinates
                 var sy = r*2*(1 - data) + (y - r);
@@ -168,10 +165,6 @@
                     update();
                     if (self._runing) {
                         requestAnimationFrame(step);
-                    } else {
-                        if (typeof txt == 'string'){
-                            self._drawText(ctx, textColor, font, r, data, x, y, txt);
-                        }
                     }
                 }
                 step(ctx, r, datanow, lineWidth, waterColor, x, y, wave, txt)
