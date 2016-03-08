@@ -1,7 +1,12 @@
 /**
-* 水球图 wataerbubble
-* @author fiona23 (fiona_fanmy@163.com)
-*/
+ * 水球图 wataerbubble
+ * @author fiona23 (fiona_fanmy@163.com)
+ * @2016.3.8 version 1.2
+ *  chrome bug fixed
+ * @version 1.1
+ * Because the bug of chrome V 46.0.2490.86, I have to render the text after animation, so guilty.
+ * I have reported this issue to google, hoping it would be sovled in the new version.
+ */
 
 (function($) {
     $.fn.waterbubble = function(options) {
@@ -72,21 +77,21 @@
                 ctx.lineWidth = lineWidth;
                 ctx.strokeStyle = waterColor;
                 ctx.stroke();
-                //if config animation true
-                if (config.animation) {
-                    this._animate(ctx, r, data, lineWidth, waterColor, x, y, wave)
-                } else {
-                    this._fillWater(ctx, r, data, lineWidth, waterColor, x, y, wave);
-                }
-                
                 if (typeof config.txt == 'string'){
                     this._drawText(ctx, textColor, font, config.radius, data, x, y, config.txt);
+                }
+                //if config animation true
+                if (config.animation) {
+                    this._animate(ctx, r, data, lineWidth, waterColor, x, y, wave, config.txt, textColor, font)
+                } else {
+                    this._fillWater(ctx, r, data, lineWidth, waterColor, x, y, wave);
                 }
 
                 return;
             },
 
             _fillWater: function (ctx, r, data, lineWidth, waterColor, x, y, wave) {
+                // this.refresh(canvas, config);
                 ctx.beginPath();
 
                 ctx.globalCompositeOperation = 'destination-over';
@@ -139,7 +144,7 @@
                 ctx.fillText(txt, sx, sy)
             },
 
-            _animate: function (ctx, r, data, lineWidth, waterColor, x, y, wave) {
+            _animate: function (ctx, r, data, lineWidth, waterColor, x, y, wave, txt, textColor, font) {
                 var datanow = {
                     value: 0
                 };
@@ -162,7 +167,7 @@
                         requestAnimationFrame(step);
                     }
                 }
-                step(ctx, r, datanow, lineWidth, waterColor, x, y, wave)
+                step(ctx, r, datanow, lineWidth, waterColor, x, y, wave, txt)
             }
         }
 }(jQuery));
