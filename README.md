@@ -1,23 +1,23 @@
-#water-bubble-chart
+# water-bubble-chart
 
 This is a jQuery plugin to render specific data into water bubble chart (or liquid bubble chart).  
 For instance, it can used in your resume to describe the extent to which you master some skills, or to reflect as a progress bar for completing a specific task.
-You can visit [this](http://fiona23.github.io/water-bubble-chart/) for more information, with a demo included as well.   
+You can visit [this](http://miafan23.github.io/water-bubble-chart/) for more information, with a demo included as well.   
 
   
 这是一个水球图表， 可以用来反应你某项技能的掌握情况， 或者你正在做的某件事的完成情况。
-查看[demo](http://fiona23.github.io/water-bubble-chart/)
+查看[demo](http://miafan23.github.io/water-bubble-chart/)
 
 ![waterbubble](js.png)
 
-#Update
+# Update
 * 2016.3 
 chrome bug fixed. 
 * 2015.12 
 Because of the [bug](http://stackoverflow.com/questions/34012767/why-there-is-a-white-line-on-the-edge-while-using-canvas-destination-over) of newest version of chrome V 46.0.2490.86, I have to render the text after animation.  
 I have reported this issue to google, hoping it would be sovled in the new version.
 
-#Usage
+# Usage
 To implement the water bubble charts, the following files should always be included.
 
 ```html
@@ -25,11 +25,11 @@ To implement the water bubble charts, the following files should always be inclu
 <script src="waterbubble.js" type="text/javascript"></script>
 ```
 
-###html code
+### html code
 ```html
 <canvas id="waterbubble"></canvas>
 ```
-###js code  
+### js code  
 You can use the default settings like this: 
 ```javascript
 $('#waterbubble').waterbubble();
